@@ -10,6 +10,7 @@
 </head>
 <body>
     <section class="banner" id="header">
+        <!-- this is a text message  -->
         <header>
             <a href="#header" class="logo">Portfolio</a>
             <ul class="menu">
