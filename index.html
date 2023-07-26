@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myportfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/63237276ef.js" crossorigin="anonymous"></script>
@@ -13,16 +13,17 @@
         <!-- this is a text message  -->
         <header>
             <a href="#header" class="logo">Portfolio</a>
-            <ul class="menu">
-
+            <ul class="menu" onclick="hideMenu()">
+                <p class="navbars" onclick="closemenu()"> <i class="fa-solid fa-xmark"></i> </p>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
-            <ul class="mobile"  id="sidemenu">
+            <div class="navbar" onclick="openmenu()"><i class="fa-solid fa-bars"></i>&#8801</div>
+            
+            <!-- <ul class="mobile"  id="sidemenu">
 
             <li><a href="#header" onclick="hideMenu()">Home</a></li>
             <li><a href="#about" onclick="hideMenu()">About</a></li>
@@ -31,7 +32,7 @@
             <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
                 <img src="images/close.png" alt=""onclick="closemenu()">
             </ul>
-            <img src="images/menu.png" alt="" onclick="openmenu()">
+            <img src="images/menu.png" alt="" onclick="openmenu()"> -->
         </header>
 
         <img src="images/Man.png" class="men">
@@ -41,12 +42,12 @@
                 <h2>I'm <span class="input"></span></h2>
                 <h3>Professional Web Designer</h3>
                 <p>As a skilled developer, I am proficient in HTML, CSS, JavaScript, and
-                     several modern frameworks such as React and Angular. My goal is to 
-                     deliver innovative and efficient solutions tailored to your specific needs.
-                    I am well-versed in responsive design, ensuring your website looks and
-                     performs flawlessly on all devices.</p>
-                     <a href="#" id="contact" >Hire Me</a>
-                     <a href="images/awodele.pdf">Download CV</a>
+                    several modern frameworks such as React and Angular. My goal is to 
+                    deliver innovative and efficient solutions tailored to your specific needs.
+                   I am well-versed in responsive design, ensuring your website looks and
+                    performs flawlessly on all devices.</p>
+                    <a href="#" id="contact" >Hire Me</a>
+                    <a href="images/awodele.pdf">Download CV</a>
             </div>
         </div>
 
@@ -58,7 +59,7 @@
     </section>
     <div class="bg-container">
             <!-- about -->
-      <div id="about">
+    <div id="about">
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
@@ -107,13 +108,20 @@
         <div class="services-list">
             <div>
             <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
+                <h2>Web Development</h2>
                 <p>
-                    Web Development
                     We Build and Structure a responsible layout websites for smaller, medium, and large companies 
-                    for Users to interact in your Website
-                </p> 
-                
+                    for Users to interact in your Website.<br><br>
+
+                    <ul>
+                        <strong>Tasks</strong>
+                        <li>Responsive Design</li>
+                        <li> Update existing Websites</li>
+                        <li> Optimize Websites for Maximum Speed</li>
+                        <li>Launch and Maintenance of Websites</li>
+                        <li>functionality of Websites</li>
+                    </ul> 
+                </p>
                 <a href="#">Learn more</a>
             </div>
             <div>
@@ -121,7 +129,17 @@
                 <h2>UI/UX Design</h2>
                 <p>
                     UI/UX Design
-                    We Creates structural design solutions for pain points that users encounter anywhere with there product.  
+                    We Creates structural design solutions
+                     for pain points that users encounter anywhere with there product.<br><br> 
+                     <ul>
+                        <strong> Tasks</strong>
+                        <li>Exploring the user problem and requirements</li>
+                        <li>Ceation of tables and images through Graphic Design</li>
+                        <li>Implementaion of business objectivity into the design</li>
+                        <li>Creation of interface components like buttons, Menus, 
+                            Seach field, tabs, and others
+                        </li>
+                    </ul> 
                 </p>
                 <a href="#">Learn more</a>
             </div>
@@ -129,9 +147,18 @@
             <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
                 <p>
+ 
                     Web App Design
                     We Create or Design Web Applications for more interactive and easier to use
-                    . It function across different platforms and devices.  
+                    It function across different platforms and devices.<br><br> 
+                    <ul>
+                        <strong>Tasks</strong>
+                        <li>Static Web Applications</li>
+                        <li>Dynamic Web Applications</li>
+                        <li>E - Commerce Applications</li>
+                        <li>Portal Web Applications</li>
+                        <li>Progressive Web Application</li>
+                    </ul> 
                 </p>
                 <a href="#">Learn more</a>
             </div>
@@ -184,15 +211,15 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>awodeleshukuroh@gmail.com</p>
                     <p><i class="fa-solid fa-square-phone"></i>08144646901</p>
                     <div class="social-icons">
                         <a href="https://facebook.com/Awodele Opeyemi"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://twiter.com/Awodele sukuroh"><i class="fa-brands fa-square-twitter"></i></a>
                         <a href="https://instagram.com/Awodele sukuroh"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com/Awodele sukuroh"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://linkedin.com/Awodele shukuroh"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="images/awodele.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/awodele.pdf"  download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form action="https://formsubmit.co/awodeleshukuroh@gmail.com" method="POST">
@@ -211,18 +238,12 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright @ Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+            <p>Copyright @ Awotech. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
         </div>
     </div>
     </div>    
 
-     <!-- <p>
-        320px — 480px: Mobile devices.
-        481px — 768px: iPads, Tablets.
-        769px — 1024px: Small screens, laptops.
-        1025px — 1200px: Desktops, large screens.
-        1201px and more — Extra large screens, TV.
-     </p> -->
+
 
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
@@ -243,19 +264,23 @@
     <script>
 
         var sidemenu = document.getElementById("sidemenu");
+        let navbar = document.querySelector(".menu")
 
         function openmenu(){
-            sidemenu.style.right = "0";
-            var navbar = document.querySelector('header .mobile');
-            navbar.style.display = 'block';
+            navbar.classList.add("opennav")
+            // navbar.style.right = "0";
+            // var navbar = document.querySelector('header .mobile');
+            // navbar.style.display = 'block';
         }
         
         function closemenu(){
-            sidemenu.style.right = "-200px";
+            // navbar.style.right = "-200px";
+            navbar.classList.remove("opennav")
         }
         function hideMenu() {
-            var navbar = document.querySelector('header .mobile');
-            navbar.style.display = 'none';
+            // var navbar = document.querySelector('header .mobile');
+            // navbar.style.display = 'none';
+            navbar.classList.remove("opennav")
         }
         
         </script>
