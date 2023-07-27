@@ -479,6 +479,7 @@ form .btn2{
     padding: 0;
     position: absolute;
 }
+
 /* desktop */
 @media screen and (min-width: 1000px){
     .navbar{
@@ -488,13 +489,15 @@ form .btn2{
         display: none;
     }
 }
+
+
 /* tablets */
 @media screen and (min-width: 567px) and (max-width: 999px){
     .menu{
         display: none;
     }
     section{
-        min-height: 70vh;
+        min-height: 85vh;
     }
     section::before{
         width:400px;
@@ -562,9 +565,7 @@ form .btn2{
         background: #21283a;
     }
     section::before{
-        width: 350px;
-        min-height: 40rem;
-        right: 30px;
+  opacity: 0;
         }
         .men{
             max-width: 450px;
@@ -618,13 +619,12 @@ form .btn2{
         display: none;
     }
     section::before{
-            width: 350px;
-            min-height: 30rem;
-            right: 50px;
+            opacity: 0;
     }
    section{
        width:316px;
        min-height: 140vh;
+       padding: 0 40px;
    }
    .content .contentBx {
     max-width: 900px;
@@ -632,6 +632,7 @@ form .btn2{
    .men{
     max-width: 500px;
     right: 25px;
+    opacity: 0.3;
   }
   header{
     width:100%;
