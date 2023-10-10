@@ -564,7 +564,7 @@ form .btn2{
         display: none;
     }
     section{
-        min-height:90vh;
+        min-height:110vh;
         background: #21283a;
     }
     section::before{
@@ -627,7 +627,7 @@ form .btn2{
     }
    section{
        width:316px;
-       min-height: 110vh;
+       min-height: 130vh;
        padding: 0 40px;
    }
    .content .contentBx {
